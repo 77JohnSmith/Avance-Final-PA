@@ -199,7 +199,7 @@ LRESULT CALLBACK procVRegistro(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 		}
 		SendMessage(GetDlgItem(hwnd, ID_tipoUsuRegistro), CB_SETCURSEL, (WPARAM)0, 0);
 
-		char comercio[2][15] = { "7/11", "OXXO" };
+		char comercio[2][15] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, ID_ComRegistro, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercio[i]);
 		}
@@ -355,7 +355,7 @@ LRESULT CALLBACK procVAltaCli(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		SYSTEMTIME st;
 		SendDlgItemMessage(hwnd, IDC_Fecha, DTM_GETSYSTEMTIME, 0, (LPARAM)&st);
 
-		char comercioCli[2][15] = { "7/11", "OXXO" };
+		char comercioCli[2][15] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, IDC_ComAC, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercioCli[i]);
 		}
@@ -404,7 +404,7 @@ LRESULT CALLBACK procVRegistroMenu(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lP
 			SendDlgItemMessage(hwnd, IDC_TipoRM, CB_INSERTSTRING, (WPARAM)i, (LPARAM)tipoUsu[i]);
 		}
 		SendMessage(GetDlgItem(hwnd, IDC_TipoRM), CB_SETCURSEL, (WPARAM)0, 0);
-		char comercio[2][8] = { "7/11", "OXXO" };
+		char comercio[2][8] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, IDC_ComRM, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercio[i]);
 		}
@@ -526,7 +526,7 @@ LRESULT CALLBACK procVlistaUsu(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 			}
 			auxU = auxU->sigU;
 		}
-		char comercio[2][8] = { "7/11", "OXXO" };
+		char comercio[2][8] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, IDC_EDIT3, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercio[i]);
 		}
@@ -802,7 +802,7 @@ LRESULT CALLBACK procVAltaProm(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 		}
 		SendMessage(GetDlgItem(hwnd, IDC_EstatusAP), CB_SETCURSEL, (WPARAM)0, 0);
 
-		char comercio[2][8] = { "7/11", "OXXO" };
+		char comercio[2][8] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, IDC_ComercioProm, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercio[i]);
 		}
@@ -960,7 +960,7 @@ LRESULT CALLBACK procVAltaCons(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 		SendDlgItemMessage(hwnd, ID_foto, STM_SETIMAGE, IMAGE_BITMAP, (LPARAM)bmp);
 
 
-		char comercioC[2][8] = { "7/11", "OXXO" };
+		char comercioC[2][8] = { "+KOTA", "Petco" };
 		for (int i = 0; i < 2; i++) {
 			SendDlgItemMessage(hwnd, IDC_ComercioACO, CB_INSERTSTRING, (WPARAM)i, (LPARAM)comercioC[i]);
 		}
