@@ -1,0 +1,19 @@
+﻿  Source.cpp
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(121,16): warning C4244: 'return': conversion from 'WPARAM' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(548,32): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(570,31): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(591,31): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(644,32): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(664,33): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(720,34): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(743,33): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(759,33): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(877,33): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(901,32): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(923,32): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(1028,34): warning C4244: '=': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(1107,7): warning C4101: 'newNom': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(1185,7): warning C4101: 'newCon': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(1294,7): warning C4101: 'newNomCli': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance 2 PA\Source.cpp(1460,7): warning C4101: 'newNomProm': unreferenced local variable
+  Avance 2 PA.vcxproj -> C:\Users\John Smith\Desktop\Avance 2 PA\x64\Debug\Avance 2 PA.exe

@@ -1,0 +1,598 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_InicioSesion DIALOGEX 0, 0, 149, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Inicio de sesión"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ingresar",ID_OKInicio,36,96,48,12
+    PUSHBUTTON      "Salir",ID_CancelarInicio,36,120,48,12
+    LTEXT           "Nombre de usuario",IDC_STATIC,36,24,63,8
+    LTEXT           "Contraseña",IDC_STATIC,42,66,39,8
+    EDITTEXT        ID_UsuInicio,24,42,84,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_contraInicio,24,78,84,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Registrarse ",ID_BotonRegistro,36,144,48,12
+END
+
+ID_Registro DIALOGEX 0, 0, 213, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Registro"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_OKRegistro,78,114,50,14
+    PUSHBUTTON      "Cancelar",ID_CancelarRegistro,78,132,50,14
+    LTEXT           "Nombre de usuario:",IDC_STATIC,6,18,72,8
+    LTEXT           "Contraseña:",IDC_STATIC,6,42,42,12
+    EDITTEXT        ID_usuRegistro,72,18,120,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_ContraRegistro,72,42,120,12,ES_AUTOHSCROLL
+    LTEXT           "Comercio:",IDC_STATIC,6,66,36,8
+    LTEXT           "Tipo:",IDC_STATIC,6,90,18,8
+    COMBOBOX        ID_tipoUsuRegistro,72,90,120,54,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_DISABLED | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        ID_ComRegistro,72,66,120,54,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+ID_miUsu DIALOGEX 0, 0, 453, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Mi usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Estático",IDC_usuMiUsu,78,24,44,8
+    EDITTEXT        IDC_miUsuNomCompleto,78,60,163,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre completo:",IDC_STATIC,6,60,66,12
+    LTEXT           "Comercio:",IDC_STATIC,36,78,36,12
+    LTEXT           "Usuario:",IDC_STATIC,42,24,30,8
+    PUSHBUTTON      "Cambiar foto",IDC_cambiarFoto,312,18,66,18,WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,273,78,13,11
+    PUSHBUTTON      "Modificar",IDC_modificarUsu,312,48,66,18
+    PUSHBUTTON      "Registrar",IDC_RegistrarMiUsu,78,126,48,12,WS_DISABLED
+    PUSHBUTTON      "Regresar",IDC_regresarMU,180,126,50,12
+    LTEXT           "Tipo:",IDC_STATIC,54,96,18,12
+    EDITTEXT        IDC_contraMiUsu,78,42,162,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Contraseña:",IDC_STATIC,30,42,42,12
+    COMBOBOX        IDC_tipoMiUsu,78,96,162,78,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_comercioMiUsu,78,78,162,12,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+ID_PrincipalMenu DIALOGEX 0, 0, 425, 275
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Principal"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Salir",ID_SalirMenu,360,252,50,14
+    LISTBOX         IDC_listBoxUsu,12,18,126,246,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Usuarios",IDC_STATIC,60,6,30,8
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,192,42,13,11
+    LTEXT           "Estático",IDC_usuMiUsu,234,144,138,8
+    LTEXT           "Estático",IDC_comercioMiUsu,234,162,132,12
+    LTEXT           "Estático",IDC_tipoMiUsu,234,180,132,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,161,146,66,12
+    LTEXT           "Tipo:",IDC_STATIC,210,180,18,12
+    LTEXT           "Comercio:",IDC_STATIC,192,162,36,12
+    LTEXT           "Usuario Actual",IDC_STATIC,234,30,54,8
+END
+
+ID_RegistroMenu DIALOGEX 0, 0, 503, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Registro de usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_OKRM,108,96,50,14
+    PUSHBUTTON      "Cancelar",ID_CancelarRM,186,96,50,14
+    LTEXT           "Usuario:",IDC_STATIC,66,18,30,12
+    LTEXT           "Contraseña:",IDC_STATIC,48,36,42,12
+    EDITTEXT        IDC_UsuRM,98,16,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ContraRM,96,36,156,12,ES_AUTOHSCROLL
+    LTEXT           "Tipo:",IDC_STATIC,72,72,18,12
+    LTEXT           "Comercio:",IDC_STATIC,54,54,36,12
+    COMBOBOX        IDC_TipoRM,96,72,156,66,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_ComRM,96,54,156,66,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre de usuario:",IDC_STATIC,258,126,66,12
+    LTEXT           "Comercio:",IDC_STATIC,288,144,36,12
+    LTEXT           "Tipo:",IDC_STATIC,300,162,18,12
+    EDITTEXT        IDC_comercioMiUsu,324,144,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,324,162,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,324,126,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,324,24,13,11
+END
+
+ID_listaUsuMenu DIALOGEX 0, 0, 751, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Lista de usuarios"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar",ID_RegresarLU,354,138,50,14
+    LISTBOX         IDC_listBoxUsu,16,20,192,166,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Usuarios",IDC_STATIC,90,6,30,12
+    PUSHBUTTON      "Modificar",IDC_modificarUsu,414,120,54,12
+    EDITTEXT        IDC_EDIT1,288,24,180,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Eliminar",IDC_EliminarUsu,288,120,54,12
+    EDITTEXT        IDC_EDIT2,288,48,180,12,ES_AUTOHSCROLL
+    LTEXT           "Usuario:",IDC_STATIC,252,24,30,12
+    LTEXT           "Nombre completo:",IDC_STATIC,246,42,36,18
+    LTEXT           "Comercio:",IDC_STATIC,246,72,36,12
+    COMBOBOX        IDC_EDIT3,288,72,180,12,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT4,288,96,180,72,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tipo:",IDC_STATIC,264,96,18,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,510,138,66,12
+    LTEXT           "Comercio:",IDC_STATIC,540,156,36,12
+    LTEXT           "Tipo:",IDC_STATIC,552,174,18,12
+    EDITTEXT        IDC_comercioMiUsu,576,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,576,174,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,576,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,576,36,13,11
+END
+
+ID_AC DIALOGEX 0, 0, 461, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Alta de clientes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",ID_CancelarAC,138,96,50,14
+    EDITTEXT        IDC_CorreoAC,66,36,180,12,ES_AUTOHSCROLL
+    LTEXT           "Nombre:",IDC_STATIC,36,18,30,12
+    EDITTEXT        IDC_NomAC,66,18,180,12,ES_AUTOHSCROLL
+    LTEXT           "Correo:",IDC_STATIC,36,36,30,12
+    LTEXT           "Comercio:",IDC_STATIC,24,54,36,12
+    CONTROL         "",IDC_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,66,72,96,12
+    LTEXT           "Fecha:",IDC_STATIC,36,72,24,12
+    PUSHBUTTON      "Registrar",ID_RegistrarAC,66,96,50,14
+    COMBOBOX        IDC_ComAC,66,54,180,90,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre de usuario:",IDC_STATIC,222,120,66,12
+    LTEXT           "Comercio:",IDC_STATIC,252,138,36,12
+    LTEXT           "Tipo:",IDC_STATIC,264,156,18,12
+    EDITTEXT        IDC_comercioMiUsu,288,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,288,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,288,120,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,288,18,13,11
+END
+
+ID_ListaCli DIALOGEX 0, 0, 665, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Lista de clientes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar",IDC_RegresarLC,282,132,50,14
+    LISTBOX         IDC_ListBoxCli,6,24,156,162,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Clientes",IDC_STATIC,66,6,60,12
+    LTEXT           "Comercio:",IDC_STATIC,192,60,36,12
+    LTEXT           "Correo:",IDC_STATIC,198,36,30,12
+    LTEXT           "Fecha:",IDC_STATIC,198,84,24,12
+    EDITTEXT        IDC_correoLC,228,36,174,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_comLC,228,60,174,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_FechaLC,228,84,174,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Modificar",IDC_ModificarCli,222,114,54,12
+    PUSHBUTTON      "Eliminar",IDC_EliminarCli,348,114,54,12
+    EDITTEXT        IDC_NomLC,228,12,174,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre:",IDC_STATIC,192,12,30,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,420,138,66,12
+    LTEXT           "Comercio:",IDC_STATIC,450,156,36,12
+    LTEXT           "Tipo:",IDC_STATIC,462,174,18,12
+    EDITTEXT        IDC_comercioMiUsu,486,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,486,174,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,486,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,486,36,13,11
+END
+
+ID_AP DIALOGEX 0, 0, 527, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Alta de promociones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_RegistrarAP,360,180,50,14
+    PUSHBUTTON      "Cancelar",ID_CancelarAP,426,180,50,14
+    EDITTEXT        IDC_MontoAP,102,42,150,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NomPromAP,102,18,150,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PorcAP,102,66,150,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FechaProm,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,102,90,150,12
+    LTEXT           "Nombre:",IDC_STATIC,66,18,30,12
+    LTEXT           "Monto:",IDC_STATIC,72,42,24,12
+    LTEXT           "Porcentaje de descuento:",IDC_STATIC,12,66,84,12
+    LTEXT           "Fecha:",IDC_STATIC,72,90,23,8
+    COMBOBOX        IDC_EstatusAP,102,114,150,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Estatus:",IDC_STATIC,66,114,30,8
+    LTEXT           "Nombre de usuario:",IDC_STATIC,288,120,66,12
+    LTEXT           "Comercio:",IDC_STATIC,318,138,36,12
+    LTEXT           "Tipo:",IDC_STATIC,330,156,18,12
+    EDITTEXT        IDC_comercioMiUsu,354,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,354,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,354,120,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,354,18,13,11
+    COMBOBOX        IDC_ComercioProm,102,138,150,72,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comercio:",IDC_STATIC,60,138,36,12
+END
+
+ID_ListaProm DIALOGEX 0, 0, 701, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Lista de promociones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Regresar",IDC_RegresarLP,300,168,50,14
+    LISTBOX         IDC_ListPromNom,6,24,168,162,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre:",IDC_STATIC,216,12,30,12
+    LTEXT           "Estatus:",IDC_STATIC,210,132,30,12
+    LTEXT           "Porcentaje de descuento:",IDC_STATIC,192,60,54,18
+    LTEXT           "Monto:",IDC_STATIC,222,36,24,12
+    LTEXT           "Fecha:",IDC_STATIC,216,84,24,12
+    LTEXT           "Promociones",IDC_STATIC,66,6,48,12
+    EDITTEXT        IDC_NomLP,246,12,156,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MontoLP,246,36,156,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PorcLP,246,60,156,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_FechaLP,246,84,156,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Modificar",IDC_ModificarProm,246,156,48,12
+    PUSHBUTTON      "Eliminar",IDC_EliminarProm,354,156,48,12
+    COMBOBOX        IDC_EstatusLP,246,132,156,72,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre de usuario:",IDC_STATIC,462,138,66,12
+    LTEXT           "Comercio:",IDC_STATIC,492,156,36,12
+    LTEXT           "Tipo:",IDC_STATIC,504,174,18,12
+    EDITTEXT        IDC_comercioMiUsu,528,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,528,174,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,528,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,528,36,13,11
+    EDITTEXT        IDC_ComercioLP,246,108,156,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Comercio:",IDC_STATIC,204,108,36,12
+END
+
+ID_ACO DIALOGEX 0, 0, 579, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Alta de consumos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_RegistrarACO,420,186,50,14
+    PUSHBUTTON      "Cancelar",ID_CancelarACO,498,186,50,14
+    EDITTEXT        IDC_CliNomACO,114,12,174,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MontoACO,114,36,174,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DescuentoACO,114,84,174,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SubTotalACO,114,60,174,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TotalACO,114,108,174,12,ES_AUTOHSCROLL
+    LTEXT           "Descuento:",IDC_STATIC,72,84,42,12
+    LTEXT           "Subtotal:",IDC_STATIC,78,60,30,12
+    LTEXT           "Total:",IDC_STATIC,84,108,24,12
+    LTEXT           "Fecha:",IDC_STATIC,84,132,24,12
+    LTEXT           "Monto:",IDC_STATIC,84,36,24,12
+    LTEXT           "Cliente:",IDC_STATIC,78,12,30,12
+    CONTROL         "",IDC_FechaACO,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,114,132,174,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,342,126,66,12
+    LTEXT           "Comercio:",IDC_STATIC,372,144,36,12
+    LTEXT           "Tipo:",IDC_STATIC,384,162,18,12
+    EDITTEXT        IDC_comercioMiUsu,408,144,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,408,162,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,408,126,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,408,24,13,11
+    COMBOBOX        IDC_ComercioACO,114,156,174,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comercio:",IDC_STATIC,72,156,36,12
+END
+
+ID_LCO DIALOGEX 0, 0, 623, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Lista de Consumos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar",IDC_RegresarLCO,222,162,50,14
+    LTEXT           "Consumos",IDC_STATIC,66,6,36,12
+    LTEXT           "Fecha:",IDC_STATIC,168,108,24,12
+    LTEXT           "Subtotal:",IDC_STATIC,162,60,30,12
+    LTEXT           "Descuento:",IDC_STATIC,156,36,36,12
+    LTEXT           "Total:",IDC_STATIC,168,84,24,12
+    LTEXT           "Cliente:",IDC_STATIC,168,12,30,12
+    EDITTEXT        IDC_clienteLC,198,12,144,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_DescLC,198,36,144,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SubLC,198,60,144,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TotaLC,198,84,144,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_FechaLCO,198,108,144,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre de usuario:",IDC_STATIC,372,132,66,12
+    LTEXT           "Comercio:",IDC_STATIC,402,150,36,12
+    LTEXT           "Tipo:",IDC_STATIC,414,168,18,12
+    EDITTEXT        IDC_comercioMiUsu,438,150,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,438,168,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,438,132,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,438,30,13,11
+    LISTBOX         IDC_ListNomCons,6,24,144,150,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+ID_ModificarContra DIALOGEX 0, 0, 629, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Modificar contraseña"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Regresar",ID_RegresarMC,318,78,50,14
+    LISTBOX         IDC_listBoxUsu,12,12,144,156,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_contraMC,210,48,174,12,ES_AUTOHSCROLL
+    LTEXT           "Contraseña:",IDC_STATIC,162,48,42,8
+    EDITTEXT        IDC_NomUsuMC,210,24,174,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Usuario:",IDC_STATIC,174,24,30,12
+    PUSHBUTTON      "Modificar",IDC_ModificarMC,210,78,48,12
+    LTEXT           "Nombre de usuario:",IDC_STATIC,390,120,66,12
+    LTEXT           "Comercio:",IDC_STATIC,420,138,36,12
+    LTEXT           "Tipo:",IDC_STATIC,432,156,18,12
+    EDITTEXT        IDC_comercioMiUsu,456,138,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_tipoMiUsu,456,156,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_usuMiUsu,456,120,162,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",ID_foto,"Static",SS_BITMAP,456,18,13,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_InicioSesion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    ID_Registro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        VERTGUIDE, 2
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    ID_miUsu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    ID_PrincipalMenu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    ID_RegistroMenu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 496
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    ID_listaUsuMenu, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 744
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    ID_AC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 454
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    ID_ListaCli, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 658
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    ID_AP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 520
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    ID_ListaProm, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 694
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    ID_ACO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 572
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    ID_LCO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 616
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    ID_ModificarContra, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 622
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_InicioSesion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_Registro AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_miUsu AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_PrincipalMenu AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_RegistroMenu AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_listaUsuMenu AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_AC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_ListaCli AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_AP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_ListaProm AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_ACO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_LCO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_ModificarContra AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Usuarios"
+    BEGIN
+        MENUITEM "Mi cuenta",                   ID_USUARIOS_MICUENTA
+        MENUITEM "Alta",                        ID_USUARIOS_ALTA
+        MENUITEM "Lista",                       ID_USUARIOS_LISTA
+        MENUITEM "Modificar contraseña",        ID_USUARIOS_MODIFICARCONTRASENA
+    END
+    POPUP "Clientes"
+    BEGIN
+        MENUITEM "Alta",                        ID_CLIENTES_ALTA
+        MENUITEM "Lista",                       ID_CLIENTES_LISTA
+    END
+    POPUP "Promociones"
+    BEGIN
+        MENUITEM "Alta",                        ID_PROMOCIONES_ALTA
+        MENUITEM "Lista",                       ID_PROMOCIONES_LISTA
+    END
+    POPUP "Consumos"
+    BEGIN
+        MENUITEM "Alta",                        ID_CONSUMOS_ALTA
+        MENUITEM "Lista",                       ID_CONSUMOS_LISTA
+    END
+END
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
