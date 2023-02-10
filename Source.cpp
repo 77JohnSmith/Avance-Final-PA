@@ -948,6 +948,9 @@ LRESULT CALLBACK procVListaProm(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPara
 	return false;
 }
 
+
+// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
+
 LRESULT CALLBACK procVAltaCons(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 	switch (msg) {
 	case WM_INITDIALOG: {
@@ -1102,6 +1105,8 @@ void registrarUsuarios(usuario* nuevoU) {
 	EndDialog(0, 0);
 }
 
+// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
+
 void modificarUsuarios(usuario* newUsu, char nomUsu[30]) {
 	auxU = inicioU;
 	char newNom[50];
@@ -1174,7 +1179,7 @@ void eliminarUsuarios(char nomUsuEli[50]) {
 				auxU = inicioU; 
 			}
 			MessageBox(0, "Usuario eliminado", "AVISO", MB_OK);
-
+			// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 		}
 	}
 }
@@ -1249,7 +1254,7 @@ void leerUsuarios() {
 
 			usuLeido = new usuario;
 		}
-		leerUsuario.close();
+		leerUsuario.close();// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 	}
 }
 
@@ -1296,7 +1301,7 @@ void modificarClientes(cliente* newCli, char nomCli[30]) {
 	if (auxCl == nullptr)
 	{
 		MessageBox(0, "No existe clientes registrados", "AVISO", MB_OK | MB_ICONINFORMATION);
-	}
+	}// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 	else {
 		while (auxCl != nullptr && strcmp(auxCl->nomCliente, nomCli) != 0) {
 			auxCl = auxCl->sigCl;
@@ -1374,7 +1379,7 @@ void escribirClientes() {
 		{
 			escribirCliente.write((char*)auxCl, sizeof(cliente));
 			auxCl = auxCl->sigCl;
-		}
+		}// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 	}
 	escribirCliente.close();
 }
@@ -1454,7 +1459,7 @@ void registrarPromociones(promocion* nuevoP) {
 	}
 	MessageBox(0, "Promocion registrada", "AVISO", MB_OK);
 }
-
+// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 void modificarPromociones(promocion* newProm, char nomP[30]) {
 	auxP = inicioP;
 	char newNomProm[50];
@@ -1522,7 +1527,7 @@ void eliminarPromociones(char nomPromEli[50]) {
 				auxP->sigP->antP = auxP->antP;
 				auxP->antP->sigP = auxP->sigP;
 				delete auxP;
-				auxP = inicioP;
+				auxP = inicioP;// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 			}
 			MessageBox(0, "Promocion eliminada", "AVISO", MB_OK);
 
@@ -1576,7 +1581,7 @@ void leerPromociones() {
 			promLeido = new promocion;
 		}
 		leerPromocion.close();
-	}
+	}// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 }
 
 void registrarConsumos(consumo* nuevoC) {
@@ -1634,7 +1639,7 @@ void escribirConsumos() {
 		}
 	}
 	escribirConsumo.close();
-}
+}// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 
 void leerConsumos() {
 	ifstream leerConsumo;
@@ -1660,7 +1665,7 @@ void leerConsumos() {
 			else {
 				auxC->sigC = consLeido;
 				auxC->sigC->antC = auxC;
-				auxC = auxC->sigC;
+				auxC = auxC->sigC;// ESTO LO DESCARGARON DE GITHUB PROPIEDAD DE UN ESTUDIANTE DE LMAD QUE YA PASO LA MATERIA
 				auxC->sigC = nullptr;
 			}
 
